@@ -1,0 +1,32 @@
+.photo_content {
+  width: 100%;
+  background: blue;
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all 0.5s;
+
+    .photo_item {
+      width: calc(100% / 3 - 10px);
+      margin: 0.8rem 0;
+      height: 15rem;
+      cursor: pointer;
+
+      figure {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+}
